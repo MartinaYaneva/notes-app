@@ -42,7 +42,7 @@ function App() {
     localStorage.setItem('notes-data', JSON.stringify(notes))
   }, [notes])
 
-  function addNote(text,title) {
+  function addNote(text) {
     const newNote = {
       id: nanoid(),
       text: text
