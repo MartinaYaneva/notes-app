@@ -39,5 +39,5 @@ Renders a list of notes and includes pagination. It also includes the AddNewNote
 A single note component that displays the note text and a delete button.
 
 6.AddNewNote.js
-A component with a textarea to add a new note. Uses useCallback for event handlers.
+A component with a textarea to add a new note. Uses useCallback for event handlers
 
