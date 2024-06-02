@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#6b8a9e, #ffffff);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 1.2rem 0;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+}
+
+.wrapper{
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+ 
+}
+
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+
+.single-note.new{
+  background-color: rgb(247, 255, 185);
+}
+
+textarea{
+  border:none;
+  resize: none;
+  background-color: rgb(247, 255, 185);
+ 
+}
+textarea:focus{
+  outline: none;
+}
+
+.single-note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(230, 243, 254);
+  box-shadow: 1px 3px 5px 5px rgba(24, 142, 239, 0.166);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  white-space: pre-wrap;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end
+}
+
+.ant-input-search{
+  border-radius: 10px;
+  margin-bottom: 20px;
+ 
+} 
